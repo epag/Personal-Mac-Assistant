@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>409</string>
+	<key>AMApplicationVersion</key>
+	<string>2.5</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.2.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Mail</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>account</key>
+					<dict/>
+					<key>bccAddresses</key>
+					<dict/>
+					<key>ccAddresses</key>
+					<dict/>
+					<key>message</key>
+					<dict/>
+					<key>subject</key>
+					<dict/>
+					<key>toAddresses</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.mail.message-object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/New Mail Message.action</string>
+				<key>ActionName</key>
+				<string>New Mail Message</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>account</key>
+					<string>defaultAccount</string>
+					<key>bccAddresses</key>
+					<string></string>
+					<key>ccAddresses</key>
+					<string></string>
+					<key>message</key>
+					<string></string>
+					<key>subject</key>
+					<string></string>
+					<key>toAddresses</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.CreateNewEmail</string>
+				<key>CFBundleVersion</key>
+				<string>1.2.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryMail</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMCreateNewEmailAction</string>
+				<key>InputUUID</key>
+				<string>1DBBC125-1445-40AA-9565-4A40067B3D0B</string>
+				<key>Keywords</key>
+				<array>
+					<string>Create</string>
+					<string>Make</string>
+					<string>Message</string>
+					<string>Mail</string>
+					<string>New</string>
+					<string>Send</string>
+					<string>Address</string>
+					<string>Image</string>
+					<string>Photo</string>
+					<string>File</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>247CAD9A-806C-47EE-A1D4-3229ABD5094D</string>
+				<key>UUID</key>
+				<string>F8C18466-B824-48CE-8F93-6F246A3E432E</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Mail</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>defaultAccount</string>
+						<key>name</key>
+						<string>account</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>message</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>subject</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>bccAddresses</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>ccAddresses</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+					<key>5</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>toAddresses</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>5</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>447.000000:358.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/New Mail Message.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on pressFnButton()	tell application "System Events"		key code 63	end tellend pressFnButtonon listenForNumberOfSeconds(num)	pressFnButton()	pressFnButton()		delay num		pressFnButton()end listenForNumberOfSecondson tabNumberOfTimes(num)	repeat num times		tell application "System Events"			keystroke tab		end tell	end repeatend tabNumberOfTimesdelay 0.5say "To whom is this message?"delay 1pressFnButton()-- get "to"listenForNumberOfSeconds(5)delay 1-- tab to "subject"tabNumberOfTimes(2)delay 1-- get "subject"listenForNumberOfSeconds(5)delay 0.5-- tab to "content"tabNumberOfTimes(1)delay 1-- get "content"listenForNumberOfSeconds(13)delay 0.5</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>EA36F8C1-CC61-4508-AD79-708CC361596E</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>C13B3418-9158-42C0-8414-6EBBDF11620C</string>
+				<key>StartAction</key>
+				<false/>
+				<key>UUID</key>
+				<string>6BD8F2A8-10AC-4BAD-9AFA-47CBF0387CD4</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>447.000000:604.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>3386F0D7-7278-46F8-96CF-9BD5F91D05D1</key>
+		<dict>
+			<key>from</key>
+			<string>F8C18466-B824-48CE-8F93-6F246A3E432E - F8C18466-B824-48CE-8F93-6F246A3E432E</string>
+			<key>to</key>
+			<string>6BD8F2A8-10AC-4BAD-9AFA-47CBF0387CD4 - 6BD8F2A8-10AC-4BAD-9AFA-47CBF0387CD4</string>
+		</dict>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>dictationCommandEnabled</key>
+		<integer>1</integer>
+		<key>dictationCommandIdentifier</key>
+		<string>Custom.435377884.702353</string>
+		<key>dictationCommandTimeStamp</key>
+		<date>2014-10-19T02:18:04Z</date>
+		<key>dictationCommandTitle</key>
+		<string>New Email</string>
+		<key>dictationCommandWorkflowURLString</key>
+		<string>file:///Users/MehakVohra/Desktop/New%20Email.app/</string>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.dictationCommand</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>409</string>
+	<key>AMApplicationVersion</key>
+	<string>2.5</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>property RSSURL : "http://feeds.bbci.co.uk/news/rss.xml"property RSSFile : POSIX path of ((path to temporary items as Unicode text) &amp; "rss.xml")tell application "iTunes"	set sound volume to 30	play user playlist "Morning PlayList"	delay 2	say "Good Morning. I hope you slept well"	tell application "SpeechRecognitionServer"		set theResponse to listen for {"yes", "no"} with prompt "Would you like to hear the headlines on BBC"								if theResponse is "yes" then			tell application "System Events"				activate				try										do shell script "curl -sS " &amp; quoted form of RSSURL &amp; " &gt; " &amp; quoted form of RSSFile					set rssFeed to XML file RSSFile										set rssItems to XML elements 1 thru 3 of XML element "channel" of XML element "rss" of contents of rssFeed whose name is "item"										get value of XML element "title" of XML element "channel" of XML element "rss" of contents of rssFeed					say "These are the 3 biggest news headlines on BBC" &amp; result					delay 2				on error errorMsg number errorNum					display alert "Error " &amp; errorNum message errorMsg buttons "Cancel" default button 1					return false				end try								repeat with thisItem in rssItems					try						say (get value of XML element "title" of thisItem)					on error						say "Seems wifi isn't working. Am I connected?"					end try					delay 1				end repeat			end tell								else			say "that is fine"		end if								set volume 40							end tellend tell</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>D69220AA-BE05-409E-AB90-E72F0BD4D36D</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>C75BEF90-DFDE-4C77-86E2-460DE72B1E61</string>
+				<key>UUID</key>
+				<string>6468022A-D8ED-4BD4-B2BB-4C50E54FB088</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>447.000000:316.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict/>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>dictationCommandEnabled</key>
+		<integer>0</integer>
+		<key>dictationCommandTimeStamp</key>
+		<date>2014-10-18T17:03:05Z</date>
+		<key>dictationCommandTitle</key>
+		<string>Good Morning Alex</string>
+		<key>dictationCommandWorkflowURLString</key>
+		<string></string>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.dictationCommand</string>
+	</dict>
+</dict>
+</plist>
